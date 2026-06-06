@@ -1,0 +1,48 @@
+/* ===== Base page styles ===== */
+body {
+  background-color: #f9f9f9;
+  font-family: Arial, sans-serif;
+  margin: 40px;
+}
+
+h1 {
+  color: #1F3864;
+  text-align: center;
+}
+
+h2 {
+  color: #2E74B5;
+  border-bottom: 2px solid #2E74B5;
+}
+
+h3 {
+  color: #1F3864;
+}
+
+p {
+  color: #333333;
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+li {
+  color: #444444;
+  margin-bottom: 4px;
+}
+
+/* ===== Navigation ===== */
+nav {
+  margin-bottom: 20px;
+}
+
+nav a {
+  margin-right: 15px;
+  color: #1F3864;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+a:hover {
+  color: red;
+  text-decoration: none;
+}
