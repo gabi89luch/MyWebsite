@@ -1,138 +1,215 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>Valentin Gabriel Luchian - Home</title>
-  <link rel="stylesheet" href="css/styles.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Valentin Gabriel Luchian - Personal Website</title>
+    <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
 
-  <!-- Navigation -->
-  <nav>
-    <a href="index.html">Home</a>
-    <a href="about.html">About Me</a>
-    <a href="contact.html">Contact &amp; Links</a>
-  </nav>
+<header>
+    <h1>Hello, I am Valentin Gabriel Luchian</h1>
+</header>
 
-  <!-- Header section -->
-  <h1>Hello, I am Valentin Gabriel Luchian</h1>
+<nav>
+    <a href="#about">About</a>
+    <a href="#hobbies">Hobbies</a>
+    <a href="#media">Media</a>
+    <a href="contact.html">Contact</a>
+    <a href="calculator.html">Calculator</a>
+</nav>
 
-  <img src="images/photo.jpg" alt="Photo of Valentin Gabriel Luchian" width="250">
+<div class="page-wrap">
+    <aside>
+        <h3>Quick Links</h3>
+        <a href="#about">About</a><br>
+        <a href="#hobbies">Hobbies</a><br>
+        <a href="#media">Media</a><br>
+        <a href="#contact">Contact</a><br>
+        <a href="contact.html">Contact Form</a><br>
+        <a href="calculator.html">Calculator</a>
+    </aside>
 
-  <p>Welcome to my personal CV webpage.</p>
-  <p>I am a Year 1 Computing student at the <em>National College of Ireland</em>.</p>
+    <main>
 
-  <hr>
+        <section id="about">
 
-  <!-- About Me section -->
-  <h2>Personal Profile</h2>
-  <p>I am studying <strong>BSc Computing</strong> at <em>NCI</em>. I enjoy solving
-    problems with code and learning how websites are built from the ground up.</p>
-  <p>My favourite module so far is <mark>Web Design and Development</mark>, because
-    I get to see my work come to life in the browser straight away.</p>
-  <p>I chose computing because I have always been curious about how technology works,
-    and I want to build a career creating useful software and websites.</p>
+            <img src="images/photo.jpg" alt="Photo of Valentin Gabriel Luchian" width="250">
 
-  <hr>
+            <p>Welcome to my personal CV webpage.</p>
 
-  <!-- Interests section -->
-  <h3>My Interests</h3>
-  <p>Outside of college I like football, gaming and keeping up with new technology.
-    Some fun facts: water is H<sub>2</sub>O and Einstein wrote E=mc<sup>2</sup>.</p>
+            <p>I am a Year 1 <strong>Computing</strong> student at <em>NCI</em>.</p>
 
-  <!-- Lists section: Favourite things (unordered list) -->
-  <h2>My Favourite Things</h2>
-  <ul>
-    <li>Football</li>
-    <li>Video games</li>
-    <li>Learning to code</li>
-    <li>Listening to music</li>
-  </ul>
+            <p>My favourite module is <mark>Web Design and Development</mark>.</p>
 
-  <!-- Ordered list: steps -->
-  <h2>How I Set Up My Web Page</h2>
-  <ol>
-    <li>Open Notepad++ or Sublime Text</li>
-    <li>Create a new file</li>
-    <li>Type the HTML document structure</li>
-    <li>Save as index.html</li>
-    <li>Open in Chrome to preview</li>
-  </ol>
+            <p>This module runs on <del>Tuesdays</del> <ins>Thursdays</ins>.</p>
 
-  <!-- Description list: web glossary -->
-  <h2>Web Glossary</h2>
-  <dl>
-    <dt>HTML</dt>
-    <dd>HyperText Markup Language - the structure of a web page</dd>
-    <dt>CSS</dt>
-    <dd>Cascading Style Sheets - controls how a page looks</dd>
-    <dt>Browser</dt>
-    <dd>Software that reads HTML and displays it to the user</dd>
-  </dl>
+            <p style="background-color: #EEF2F7; padding: 8px;">
+                This paragraph now has a light blue background.
+            </p>
 
-  <hr>
+            <hr>
 
-  <!-- Table section (Week 3 - Task 4) -->
-  <h2>Web Technologies Overview</h2>
-  <table>
-    <thead>
-      <tr>
-        <th>Language</th>
-        <th>Purpose</th>
-        <th>Example Use</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td>HTML</td>
-        <td>Structure</td>
-        <td>Headings, paragraphs, images</td>
-      </tr>
-      <tr>
-        <td>CSS</td>
-        <td>Style</td>
-        <td>Colours, fonts, layout</td>
-      </tr>
-      <tr>
-        <td>JavaScript</td>
-        <td>Behaviour</td>
-        <td>Buttons, calculators, forms</td>
-      </tr>
-    </tbody>
-  </table>
+            <h2>Personal Profile</h2>
 
-  <hr>
+            <p>Write a short introduction about yourself here. Include your background and what motivates you.</p>
 
-  <!-- Video section (Week 3 - Task 5) -->
-  <h2>Watch This</h2>
-  <video width="560" controls>
-    <source src="media/myvideo.mp4" type="video/mp4">
-    Your browser does not support the video tag.
-  </video>
+            <p>I chose computing because I am passionate about technology and problem-solving.</p>
 
-  <!-- Audio section (Week 3 - Task 5) -->
-  <h2>Audio</h2>
-  <audio controls>
-    <source src="media/audio.mp3" type="audio/mpeg">
-    Your browser does not support the audio tag.
-  </audio>
+            <hr>
 
-  <!-- YouTube embed (Week 3 - Task 6) -->
-  <h2>Learn More About Web Development</h2>
-  <iframe width="560" height="315"
-    src="https://www.youtube.com/embed/UB1O30fR-EE"
-    title="YouTube video player"
-    frameborder="0"
-    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-    allowfullscreen>
-  </iframe>
+            <h2>How I Set Up My Web Page</h2>
+            <ol>
+                <li>Open Notepad++ or Sublime Text</li>
+                <li>Create a new file</li>
+                <li>Type the HTML document structure</li>
+                <li>Save as index.html</li>
+                <li>Open in Chrome to preview</li>
+            </ol>
 
-  <hr>
+            <h2>Web Glossary</h2>
+            <dl>
+                <dt>HTML</dt>
+                <dd>HyperText Markup Language - the structure of a web page</dd>
+                <dt>CSS</dt>
+                <dd>Cascading Style Sheets - controls how a page looks</dd>
+                <dt>Browser</dt>
+                <dd>Software that reads HTML and displays it to the user</dd>
+            </dl>
 
-  <!-- Links section -->
-  <h2>Find Me Online</h2>
-  <p>Connect with me on <a href="https://www.linkedin.com">LinkedIn</a>.</p>
-  <p>My college: <a href="https://www.nci.ie">National College of Ireland</a>.</p>
+        </section>
+
+        <hr>
+
+        <section id="hobbies">
+
+            <h2>My Interests</h2>
+
+            <p>Outside of computing, I enjoy exploring new technologies, reading, and staying active.</p>
+
+            <p>Water is H<sub>2</sub>O. Einstein wrote E=mc<sup>2</sup>.</p>
+
+            <h2>My Favourite Things</h2>
+
+            <article class="card">
+                <img src="images/coding.png" alt="Coding" width="60">
+                <h3>Coding</h3>
+                <p>I enjoy building web pages and learning new programming languages.</p>
+            </article>
+
+            <article class="card">
+                <img src="images/reading.png" alt="Reading" width="60">
+                <h3>Reading</h3>
+                <p>I love reading about technology, science, and personal development.</p>
+            </article>
+
+            <article class="card">
+                <img src="images/games.png" alt="Strategy Games" width="60">
+                <h3>Strategy Games</h3>
+                <p>Playing strategy games helps me think critically and plan ahead.</p>
+            </article>
+
+            <article class="card featured">
+                <img src="images/photography.png" alt="Photography" width="60">
+                <h3>Photography</h3>
+                <p>I enjoy capturing moments and editing photos in my free time.</p>
+            </article>
+
+            <article class="card">
+                <img src="images/outdoors.png" alt="Exploring the Outdoors" width="60">
+                <h3>Exploring the Outdoors</h3>
+                <p>Nature walks and hiking help me stay active and clear my mind.</p>
+            </article>
+
+        </section>
+
+        <hr>
+
+        <section id="media">
+
+            <h2>Web Technologies Overview</h2>
+
+            <table>
+                <thead>
+                    <tr>
+                        <th>Language</th>
+                        <th>Purpose</th>
+                        <th>Example Use</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>HTML</td>
+                        <td>Structure</td>
+                        <td>Headings, paragraphs, images</td>
+                    </tr>
+                    <tr>
+                        <td>CSS</td>
+                        <td>Style</td>
+                        <td>Colours, fonts, layout</td>
+                    </tr>
+                    <tr>
+                        <td>JavaScript</td>
+                        <td>Behaviour</td>
+                        <td>Buttons, calculators, forms</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <hr>
+
+            <h2>Watch This</h2>
+
+            <video width="560" controls>
+                <source src="media/myvideo.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+
+            <hr>
+
+            <h2>Audio</h2>
+
+            <audio controls>
+                <source src="media/audio.mp3" type="audio/mpeg">
+                Your browser does not support the audio tag.
+            </audio>
+
+            <hr>
+
+            <h2>Learn Web Development</h2>
+
+            <iframe width="560" height="315"
+                src="https://www.youtube.com/embed/UB1O30fR-EE"
+                title="YouTube video player"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen>
+            </iframe>
+
+        </section>
+
+        <hr>
+
+        <section id="contact">
+
+            <h2>Contact & Links</h2>
+
+            <p><img src="images/email.png" alt="Email" width="24"> Email: <a href="mailto:gabriel.luchian89@gmail.com">gabriel.luchian89@gmail.com</a></p>
+
+            <p><img src="images/linkedin.png" alt="LinkedIn" width="24"> Find me on <a href="https://www.linkedin.com/in/valentin-g-luchian-178652170/">LinkedIn</a>.</p>
+
+            <p><img src="images/nci.png" alt="NCI" width="24"> Visit <a href="https://www.ncirl.ie/">National College of Ireland</a>.</p>
+
+            <p><img src="images/github.png" alt="GitHub" width="24"> GitHub: <a href="https://github.com/gabi89luch">My GitHub</a></p>
+
+        </section>
+
+    </main>
+</div>
+
+<footer>
+    <p>&copy; 2026 Valentin Gabriel Luchian</p>
+</footer>
 
 </body>
 </html>

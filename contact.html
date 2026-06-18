@@ -1,35 +1,126 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>Valentin Gabriel Luchian - Contact</title>
-  <link rel="stylesheet" href="css/styles.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact - Valentin Gabriel Luchian</title>
+    <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
 
-  <!-- Navigation -->
-  <nav>
+<header>
+    <h1>Valentin Gabriel Luchian</h1>
+</header>
+
+<nav>
     <a href="index.html">Home</a>
-    <a href="about.html">About Me</a>
-    <a href="contact.html">Contact &amp; Links</a>
-  </nav>
+    <a href="contact.html">Contact</a>
+    <a href="calculator.html">Calculator</a>
+</nav>
 
-  <!-- Header section -->
-  <h1>Contact &amp; Links</h1>
+<main>
+    <h2>Get in Touch</h2>
 
-  <h2>Get in Touch</h2>
-  <ul>
-    <li>Email: <a href="mailto:gabriel.luchian89@gmail.com">gabriel.luchian89@gmail.com</a></li>
-    <li>LinkedIn: <a href="https://www.linkedin.com/in/valentin-g-luchian-178652170/">My LinkedIn</a></li>
-    <li>GitHub: <a href="https://github.com/gabi89luch">My GitHub</a></li>
-  </ul>
+    <form id="contactForm">
+        <fieldset>
+            <legend>Personal Details</legend>
 
-  <h2>Favourite Websites</h2>
-  <ul>
-    <li><a href="https://www.nci.ie">National College of Ireland</a></li>
-    <li><a href="https://www.w3schools.com">W3Schools</a></li>
-    <li><a href="https://developer.mozilla.org">MDN Web Docs</a></li>
-  </ul>
+            <label for="name">Full Name:</label>
+            <input type="text" id="name" name="name" required minlength="2" maxlength="50"
+                   placeholder="e.g. Mary Murphy">
+            <p id="nameErr" class="error"></p>
+
+            <label for="email">Email Address:</label>
+            <input type="email" id="email" name="email" required
+                   placeholder="you@example.com">
+            <p id="emailErr" class="error"></p>
+
+            <label for="pw">Create a Password:</label>
+            <input type="password" id="pw" name="password" minlength="8">
+
+            <label for="age">Your Age:</label>
+            <input type="number" id="age" name="age" min="16" max="99">
+        </fieldset>
+
+        <fieldset>
+            <legend>Your Message</legend>
+
+            <label for="subject">Subject:</label>
+            <select id="subject" name="subject">
+                <option value="">-- Choose a subject --</option>
+                <option value="work">Work Enquiry</option>
+                <option value="general">General Message</option>
+                <option value="feedback">Website Feedback</option>
+            </select>
+
+            <p>How did you find my site?</p>
+            <input type="checkbox" id="google" name="source" value="google">
+            <label for="google">Google</label>
+            <input type="checkbox" id="social" name="source" value="social">
+            <label for="social">Social Media</label>
+            <input type="checkbox" id="friend" name="source" value="friend">
+            <label for="friend">A Friend</label>
+
+            <p>Priority:</p>
+            <input type="radio" id="low" name="priority" value="low">
+            <label for="low">Low</label>
+            <input type="radio" id="high" name="priority" value="high">
+            <label for="high">High</label>
+
+            <label for="msg">Your Message:</label>
+            <textarea id="msg" name="message" rows="5" required minlength="10"
+                      placeholder="Write your message here..."></textarea>
+            <p id="msgErr" class="error"></p>
+        </fieldset>
+
+        <button type="submit">Send Message</button>
+    </form>
+</main>
+
+<footer>
+    <p>&copy; 2026 Valentin Gabriel Luchian</p>
+</footer>
+
+<script>
+document.getElementById('contactForm')
+  .addEventListener('submit', function(event) {
+    event.preventDefault();
+
+    let name  = document.getElementById('name').value.trim();
+    let email = document.getElementById('email').value.trim();
+    let msg   = document.getElementById('msg').value.trim();
+    let valid = true;
+
+    if (name.length < 2) {
+      document.getElementById('nameErr').innerHTML
+        = 'Please enter your full name (at least 2 characters).';
+      valid = false;
+    } else {
+      document.getElementById('nameErr').innerHTML = '';
+    }
+
+    if (!email.includes('@') || !email.includes('.')) {
+      document.getElementById('emailErr').innerHTML
+        = 'Please enter a valid email address.';
+      valid = false;
+    } else {
+      document.getElementById('emailErr').innerHTML = '';
+    }
+
+    if (msg.length < 10) {
+      document.getElementById('msgErr').innerHTML
+        = 'Message must be at least 10 characters.';
+      valid = false;
+    } else {
+      document.getElementById('msgErr').innerHTML = '';
+    }
+
+    if (valid) {
+      alert('Thank you, ' + name + '! Your message has been sent.');
+      document.getElementById('contactForm').reset();
+    }
+  });
+</script>
 
 </body>
 </html>

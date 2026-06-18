@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator - Valentin Gabriel Luchian</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <style>
+        #calculator {
+            max-width: 380px;
+            margin: 40px auto;
+            padding: 30px;
+            border: 1px solid #ddd;
+            border-radius: 12px;
+            text-align: center;
+            background: white;
+        }
+        #calculator input, #calculator select {
+            width: 100%;
+            padding: 12px;
+            margin: 8px 0;
+            font-size: 16px;
+            border: 1px solid #ccc;
+            border-radius: 6px;
+            box-sizing: border-box;
+        }
+        #calcBtn {
+            width: 100%;
+            padding: 14px;
+            background: #1F3864;
+            color: white;
+            border: none;
+            border-radius: 6px;
+            font-size: 18px;
+            cursor: pointer;
+            margin-top: 10px;
+        }
+        #calcBtn:hover {
+            background: #2E74B5;
+        }
+        #result {
+            font-size: 24px;
+            font-weight: bold;
+            color: #107C41;
+            margin-top: 20px;
+            padding: 16px;
+            background: #E8F5E9;
+            border-radius: 6px;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Valentin Gabriel Luchian</h1>
+</header>
+
+<nav>
+    <a href="index.html">Home</a>
+    <a href="contact.html">Contact</a>
+    <a href="calculator.html">Calculator</a>
+</nav>
+
+<main>
+    <div id="calculator">
+        <h2>Simple Calculator</h2>
+
+        <input type="number" id="num1" placeholder="First number">
+
+        <select id="operator">
+            <option value="+">+ Addition</option>
+            <option value="-">- Subtraction</option>
+            <option value="*">x Multiplication</option>
+            <option value="/">/ Division</option>
+        </select>
+
+        <input type="number" id="num2" placeholder="Second number">
+
+        <button id="calcBtn" onclick="calculate()">
+            = Calculate
+        </button>
+
+        <div id="result">Answer will appear here</div>
+    </div>
+</main>
+
+<footer>
+    <p>&copy; 2026 Valentin Gabriel Luchian</p>
+</footer>
+
+<script>
+    function calculate() {
+        let a  = parseFloat(document.getElementById('num1').value);
+        let b  = parseFloat(document.getElementById('num2').value);
+        let op = document.getElementById('operator').value;
+
+        if (isNaN(a) || isNaN(b)) {
+            document.getElementById('result').innerHTML
+                = 'Please enter two numbers.';
+            return;
+        }
+
+        let answer;
+        if      (op === '+') { answer = a + b; }
+        else if (op === '-') { answer = a - b; }
+        else if (op === '*') { answer = a * b; }
+        else if (op === '/') {
+            if (b === 0) {
+                answer = 'Error: Cannot divide by zero!';
+            } else {
+                answer = a / b;
+            }
+        }
+
+        document.getElementById('result').innerHTML
+            = a + ' ' + op + ' ' + b + ' = ' + answer;
+    }
+</script>
+
+</body>
+</html>
