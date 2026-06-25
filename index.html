@@ -4,134 +4,112 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Valentin Gabriel Luchian - Personal Website</title>
-    <link rel="stylesheet" href="css/styles.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
 </head>
 <body>
 
-<header>
-    <h1>Hello, I am Valentin Gabriel Luchian</h1>
-</header>
-
-<nav>
-    <a href="#about">About</a>
-    <a href="#hobbies">Hobbies</a>
-    <a href="#media">Media</a>
-    <a href="contact.html">Contact</a>
-    <a href="calculator.html">Calculator</a>
+<nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+    <div class="container">
+        <a class="navbar-brand" href="index.html">Valentin Gabriel Luchian</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item"><a class="nav-link active" href="index.html">Home</a></li>
+                <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+                <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                <li class="nav-item"><a class="nav-link" href="calculator.html">Calculator</a></li>
+            </ul>
+        </div>
+    </div>
 </nav>
 
-<div class="page-wrap">
-    <aside>
-        <h3>Quick Links</h3>
-        <a href="#about">About</a><br>
-        <a href="#hobbies">Hobbies</a><br>
-        <a href="#media">Media</a><br>
-        <a href="#contact">Contact</a><br>
-        <a href="contact.html">Contact Form</a><br>
-        <a href="calculator.html">Calculator</a>
-    </aside>
+<header class="bg-dark text-white text-center py-5">
+    <div class="container">
+        <h1 class="display-4">Hello, I am Valentin Gabriel Luchian</h1>
+        <p class="lead">Year 1 Computing Student at NCI</p>
+    </div>
+</header>
 
-    <main>
+<main class="container my-5">
 
-        <section id="about">
+    <section id="about" class="mb-5">
+        <div class="row align-items-center">
+            <div class="col-md-4 text-center">
+                <img src="images/photo.jpg" alt="Photo of Valentin Gabriel Luchian" class="img-fluid rounded-circle shadow" width="250">
+            </div>
+            <div class="col-md-8">
+                <h2>Welcome</h2>
+                <p>Welcome to my personal CV webpage. I am a Year 1 <strong>Computing</strong> student at <em>NCI</em>.</p>
+                <p>My favourite module is <mark>Web Design and Development</mark>.</p>
+                <p>This module runs on <del>Tuesdays</del> <ins>Thursdays</ins>.</p>
+                <p class="bg-light p-3 rounded">I chose computing because I am passionate about technology and problem-solving.</p>
+            </div>
+        </div>
+    </section>
 
-            <img src="images/photo.jpg" alt="Photo of Valentin Gabriel Luchian" width="250">
+    <hr class="my-5">
 
-            <p>Welcome to my personal CV webpage.</p>
+    <section id="hobbies" class="mb-5">
+        <h2 class="text-center mb-4">My Favourite Things</h2>
+        <div class="row g-4">
+            <div class="col-md-4 col-lg">
+                <div class="card h-100 text-center shadow-sm">
+                    <div class="card-body">
+                        <img src="images/coding.png" alt="Coding" width="64" class="mb-3">
+                        <h5 class="card-title">Coding</h5>
+                        <p class="card-text">I enjoy building web pages and learning new programming languages.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 col-lg">
+                <div class="card h-100 text-center shadow-sm">
+                    <div class="card-body">
+                        <img src="images/reading.png" alt="Reading" width="64" class="mb-3">
+                        <h5 class="card-title">Reading</h5>
+                        <p class="card-text">I love reading about technology, science, and personal development.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 col-lg">
+                <div class="card h-100 text-center shadow-sm">
+                    <div class="card-body">
+                        <img src="images/games.png" alt="Strategy Games" width="64" class="mb-3">
+                        <h5 class="card-title">Strategy Games</h5>
+                        <p class="card-text">Playing strategy games helps me think critically and plan ahead.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 col-lg">
+                <div class="card h-100 text-center shadow-sm border-warning">
+                    <div class="card-body">
+                        <img src="images/photography.png" alt="Photography" width="64" class="mb-3">
+                        <h5 class="card-title">Photography</h5>
+                        <p class="card-text">I enjoy capturing moments and editing photos in my free time.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 col-lg">
+                <div class="card h-100 text-center shadow-sm">
+                    <div class="card-body">
+                        <img src="images/outdoors.png" alt="Exploring the Outdoors" width="64" class="mb-3">
+                        <h5 class="card-title">Outdoors</h5>
+                        <p class="card-text">Nature walks and hiking help me stay active and clear my mind.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
-            <p>I am a Year 1 <strong>Computing</strong> student at <em>NCI</em>.</p>
+    <hr class="my-5">
 
-            <p>My favourite module is <mark>Web Design and Development</mark>.</p>
+    <section id="media" class="mb-5">
+        <h2 class="text-center mb-4">Media</h2>
 
-            <p>This module runs on <del>Tuesdays</del> <ins>Thursdays</ins>.</p>
-
-            <p style="background-color: #EEF2F7; padding: 8px;">
-                This paragraph now has a light blue background.
-            </p>
-
-            <hr>
-
-            <h2>Personal Profile</h2>
-
-            <p>Write a short introduction about yourself here. Include your background and what motivates you.</p>
-
-            <p>I chose computing because I am passionate about technology and problem-solving.</p>
-
-            <hr>
-
-            <h2>How I Set Up My Web Page</h2>
-            <ol>
-                <li>Open Notepad++ or Sublime Text</li>
-                <li>Create a new file</li>
-                <li>Type the HTML document structure</li>
-                <li>Save as index.html</li>
-                <li>Open in Chrome to preview</li>
-            </ol>
-
-            <h2>Web Glossary</h2>
-            <dl>
-                <dt>HTML</dt>
-                <dd>HyperText Markup Language - the structure of a web page</dd>
-                <dt>CSS</dt>
-                <dd>Cascading Style Sheets - controls how a page looks</dd>
-                <dt>Browser</dt>
-                <dd>Software that reads HTML and displays it to the user</dd>
-            </dl>
-
-        </section>
-
-        <hr>
-
-        <section id="hobbies">
-
-            <h2>My Interests</h2>
-
-            <p>Outside of computing, I enjoy exploring new technologies, reading, and staying active.</p>
-
-            <p>Water is H<sub>2</sub>O. Einstein wrote E=mc<sup>2</sup>.</p>
-
-            <h2>My Favourite Things</h2>
-
-            <article class="card">
-                <img src="images/coding.png" alt="Coding" width="60">
-                <h3>Coding</h3>
-                <p>I enjoy building web pages and learning new programming languages.</p>
-            </article>
-
-            <article class="card">
-                <img src="images/reading.png" alt="Reading" width="60">
-                <h3>Reading</h3>
-                <p>I love reading about technology, science, and personal development.</p>
-            </article>
-
-            <article class="card">
-                <img src="images/games.png" alt="Strategy Games" width="60">
-                <h3>Strategy Games</h3>
-                <p>Playing strategy games helps me think critically and plan ahead.</p>
-            </article>
-
-            <article class="card featured">
-                <img src="images/photography.png" alt="Photography" width="60">
-                <h3>Photography</h3>
-                <p>I enjoy capturing moments and editing photos in my free time.</p>
-            </article>
-
-            <article class="card">
-                <img src="images/outdoors.png" alt="Exploring the Outdoors" width="60">
-                <h3>Exploring the Outdoors</h3>
-                <p>Nature walks and hiking help me stay active and clear my mind.</p>
-            </article>
-
-        </section>
-
-        <hr>
-
-        <section id="media">
-
-            <h2>Web Technologies Overview</h2>
-
-            <table>
-                <thead>
+        <div class="table-responsive mb-4">
+            <table class="table table-bordered table-striped">
+                <thead class="table-primary">
                     <tr>
                         <th>Language</th>
                         <th>Purpose</th>
@@ -139,77 +117,74 @@
                     </tr>
                 </thead>
                 <tbody>
-                    <tr>
-                        <td>HTML</td>
-                        <td>Structure</td>
-                        <td>Headings, paragraphs, images</td>
-                    </tr>
-                    <tr>
-                        <td>CSS</td>
-                        <td>Style</td>
-                        <td>Colours, fonts, layout</td>
-                    </tr>
-                    <tr>
-                        <td>JavaScript</td>
-                        <td>Behaviour</td>
-                        <td>Buttons, calculators, forms</td>
-                    </tr>
+                    <tr><td>HTML</td><td>Structure</td><td>Headings, paragraphs, images</td></tr>
+                    <tr><td>CSS</td><td>Style</td><td>Colours, fonts, layout</td></tr>
+                    <tr><td>JavaScript</td><td>Behaviour</td><td>Buttons, calculators, forms</td></tr>
                 </tbody>
             </table>
+        </div>
 
-            <hr>
+        <div class="row g-4">
+            <div class="col-md-6">
+                <h3>Watch This</h3>
+                <video class="w-100 rounded shadow" controls>
+                    <source src="media/myvideo.mp4" type="video/mp4">
+                </video>
+            </div>
+            <div class="col-md-6">
+                <h3>Audio</h3>
+                <audio class="w-100" controls>
+                    <source src="media/audio.mp3" type="audio/mpeg">
+                </audio>
+            </div>
+        </div>
 
-            <h2>Watch This</h2>
+        <div class="mt-4">
+            <h3>Learn Web Development</h3>
+            <div class="ratio ratio-16x9">
+                <iframe src="https://www.youtube.com/embed/UB1O30fR-EE" title="YouTube video" allowfullscreen></iframe>
+            </div>
+        </div>
+    </section>
 
-            <video width="560" controls>
-                <source src="media/myvideo.mp4" type="video/mp4">
-                Your browser does not support the video tag.
-            </video>
+    <hr class="my-5">
 
-            <hr>
+    <section id="contact" class="mb-5">
+        <h2 class="text-center mb-4">Contact & Links</h2>
+        <div class="row text-center g-3">
+            <div class="col-sm-6 col-lg-3">
+                <div class="p-3 border rounded shadow-sm">
+                    <img src="images/email.png" alt="Email" width="32">
+                    <p class="mt-2 mb-0"><a href="mailto:gabrielluchian89@gmail.com">Email Me</a></p>
+                </div>
+            </div>
+            <div class="col-sm-6 col-lg-3">
+                <div class="p-3 border rounded shadow-sm">
+                    <img src="images/linkedin.png" alt="LinkedIn" width="32">
+                    <p class="mt-2 mb-0"><a href="https://www.linkedin.com/in/valentin-g-luchian-178652170/">LinkedIn</a></p>
+                </div>
+            </div>
+            <div class="col-sm-6 col-lg-3">
+                <div class="p-3 border rounded shadow-sm">
+                    <img src="images/github.png" alt="GitHub" width="32">
+                    <p class="mt-2 mb-0"><a href="https://github.com/gabi89luch">GitHub</a></p>
+                </div>
+            </div>
+            <div class="col-sm-6 col-lg-3">
+                <div class="p-3 border rounded shadow-sm">
+                    <img src="images/nci.png" alt="NCI" width="32">
+                    <p class="mt-2 mb-0"><a href="https://www.ncirl.ie/">NCI</a></p>
+                </div>
+            </div>
+        </div>
+    </section>
 
-            <h2>Audio</h2>
+</main>
 
-            <audio controls>
-                <source src="media/audio.mp3" type="audio/mpeg">
-                Your browser does not support the audio tag.
-            </audio>
-
-            <hr>
-
-            <h2>Learn Web Development</h2>
-
-            <iframe width="560" height="315"
-                src="https://www.youtube.com/embed/UB1O30fR-EE"
-                title="YouTube video player"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                allowfullscreen>
-            </iframe>
-
-        </section>
-
-        <hr>
-
-        <section id="contact">
-
-            <h2>Contact & Links</h2>
-
-            <p><img src="images/email.png" alt="Email" width="24"> Email: <a href="mailto:gabriel.luchian89@gmail.com">gabriel.luchian89@gmail.com</a></p>
-
-            <p><img src="images/linkedin.png" alt="LinkedIn" width="24"> Find me on <a href="https://www.linkedin.com/in/valentin-g-luchian-178652170/">LinkedIn</a>.</p>
-
-            <p><img src="images/nci.png" alt="NCI" width="24"> Visit <a href="https://www.ncirl.ie/">National College of Ireland</a>.</p>
-
-            <p><img src="images/github.png" alt="GitHub" width="24"> GitHub: <a href="https://github.com/gabi89luch">My GitHub</a></p>
-
-        </section>
-
-    </main>
-</div>
-
-<footer>
-    <p>&copy; 2026 Valentin Gabriel Luchian</p>
+<footer class="bg-dark text-white text-center py-3">
+    <p class="mb-0">&copy; 2026 Valentin Gabriel Luchian</p>
 </footer>
 
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>

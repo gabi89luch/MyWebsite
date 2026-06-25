@@ -3,76 +3,134 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Valentin Gabriel Luchian - About Me</title>
-    <link rel="stylesheet" href="css/styles.css">
+    <title>About - Valentin Gabriel Luchian</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
 </head>
 <body>
 
-<header>
-    <h1>About Me</h1>
-</header>
-
-<nav>
-    <a href="index.html">Home</a>
-    <a href="about.html">About Me</a>
-    <a href="contact.html">Contact</a>
-    <a href="calculator.html">Calculator</a>
+<nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+    <div class="container">
+        <a class="navbar-brand" href="index.html">Valentin Gabriel Luchian</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                <li class="nav-item"><a class="nav-link active" href="about.html">About</a></li>
+                <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                <li class="nav-item"><a class="nav-link" href="calculator.html">Calculator</a></li>
+            </ul>
+        </div>
+    </div>
 </nav>
 
-<main>
+<header class="bg-primary text-white text-center py-4">
+    <div class="container">
+        <h1 class="display-5">About Me</h1>
+    </div>
+</header>
 
-    <section id="profile">
-        <h2>Personal Profile</h2>
-        <img src="images/photo.jpg" alt="Photo of Valentin Gabriel Luchian" width="200">
-        <p>I am a motivated and curious individual with a passion for technology. I enjoy learning new skills and applying them to real-world problems.</p>
+<main class="container my-5">
+
+    <section id="profile" class="mb-5">
+        <div class="row align-items-center">
+            <div class="col-md-4 text-center">
+                <img src="images/photo.jpg" alt="Photo of Valentin Gabriel Luchian" class="img-fluid rounded-circle shadow" width="200">
+            </div>
+            <div class="col-md-8">
+                <h2>Personal Profile</h2>
+                <p class="lead">I am a motivated and curious individual with a passion for technology. I enjoy learning new skills and applying them to real-world problems.</p>
+            </div>
+        </div>
     </section>
 
     <hr>
 
-    <section id="education">
-        <h2>Education</h2>
-        <img src="images/education_banner.jpg" alt="Education" width="600">
-        <p>Year 1 Computing student at National College of Ireland.</p>
-        <p>Previous education: [Your previous school or course].</p>
+    <section id="education" class="my-5">
+        <h2 class="mb-3">Education</h2>
+        <div class="card mb-3 shadow-sm">
+            <div class="row g-0">
+                <div class="col-md-4">
+                    <img src="images/education_banner.jpg" alt="Education" class="img-fluid rounded-start h-100" style="object-fit: cover;">
+                </div>
+                <div class="col-md-8">
+                    <div class="card-body">
+                        <h5 class="card-title">National College of Ireland</h5>
+                        <p class="card-text">Year 1 Computing student.</p>
+                        <p class="card-text"><small class="text-muted">Previous education: [Your previous school or course].</small></p>
+                    </div>
+                </div>
+            </div>
+        </div>
     </section>
 
     <hr>
 
-    <section id="skills">
-        <h2>Skills</h2>
-
-        <h3>Technical Skills</h3>
-        <img src="images/skills.png" alt="Technical Skills" width="80">
-        <p>HTML, CSS, basic programming, problem-solving.</p>
-
-        <h3>Soft Skills</h3>
-        <img src="images/education.png" alt="Soft Skills" width="80">
-        <p>Teamwork, communication, time management, attention to detail.</p>
+    <section id="skills" class="my-5">
+        <h2 class="mb-3">Skills</h2>
+        <div class="row g-4">
+            <div class="col-md-6">
+                <div class="card h-100 shadow-sm">
+                    <div class="card-body text-center">
+                        <img src="images/skills.png" alt="Technical Skills" width="64" class="mb-3">
+                        <h5 class="card-title">Technical Skills</h5>
+                        <p class="card-text">HTML, CSS, basic programming, problem-solving.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="card h-100 shadow-sm">
+                    <div class="card-body text-center">
+                        <img src="images/education.png" alt="Soft Skills" width="64" class="mb-3">
+                        <h5 class="card-title">Soft Skills</h5>
+                        <p class="card-text">Teamwork, communication, time management, attention to detail.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
     </section>
 
     <hr>
 
-    <section id="hobbies">
-        <h2>Interests & Hobbies</h2>
-        <img src="images/coding.png" alt="Coding" width="80">
-        <img src="images/reading.png" alt="Reading" width="80">
-        <img src="images/photography.png" alt="Photography" width="80">
-        <img src="images/outdoors.png" alt="Outdoors" width="80">
-        <p>In my free time, I enjoy coding small projects, reading about technology, and playing sports. I also enjoy photography and exploring the outdoors.</p>
+    <section id="hobbies" class="my-5">
+        <h2 class="mb-3">Interests & Hobbies</h2>
+        <div class="row g-3">
+            <div class="col-6 col-md-3 text-center">
+                <img src="images/coding.png" alt="Coding" width="64" class="mb-2">
+                <p>Coding</p>
+            </div>
+            <div class="col-6 col-md-3 text-center">
+                <img src="images/reading.png" alt="Reading" width="64" class="mb-2">
+                <p>Reading</p>
+            </div>
+            <div class="col-6 col-md-3 text-center">
+                <img src="images/photography.png" alt="Photography" width="64" class="mb-2">
+                <p>Photography</p>
+            </div>
+            <div class="col-6 col-md-3 text-center">
+                <img src="images/outdoors.png" alt="Outdoors" width="64" class="mb-2">
+                <p>Outdoors</p>
+            </div>
+        </div>
+        <p class="mt-3">In my free time, I enjoy coding small projects, reading about technology, and playing sports. I also enjoy photography and exploring the outdoors.</p>
     </section>
 
     <hr>
 
-    <section id="experience">
-        <h2>Work Experience</h2>
-        <p>[Describe any work experience, internships, or volunteer roles you have had.]</p>
+    <section id="experience" class="my-5">
+        <h2 class="mb-3">Work Experience</h2>
+        <div class="alert alert-info" role="alert">
+            [Describe any work experience, internships, or volunteer roles you have had.]
+        </div>
     </section>
 
 </main>
 
-<footer>
-    <p>&copy; 2026 Valentin Gabriel Luchian</p>
+<footer class="bg-dark text-white text-center py-3">
+    <p class="mb-0">&copy; 2026 Valentin Gabriel Luchian</p>
 </footer>
 
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
